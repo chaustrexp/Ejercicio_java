@@ -1,0 +1,22 @@
+# Archivos de compilación de Java
+*.class
+*.jar
+*.war
+
+# Directorios de salida de NetBeans / Eclipse / IntelliJ / VS Code
+bin/
+out/
+build/
+target/
+
+# Configuración de IDEs
+.idea/
+.settings/
+.classpath
+.project
+*.iml
+nbproject/private/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
