@@ -53,15 +53,26 @@ public class carro_modelo {
     // Setters
 
     public void setMarca(String marca) {
+        if (marca == null || marca.trim().length() < 2 || marca.trim().length() > 30) {
+            System.out.println("Error: La marca debe tener entre 2 y 30 caracteres.");
+            return;
+        }
         this.marca = marca;
     }
 
-    
     public void setPlaca(String placa) {
+        if (placa == null || !placa.trim().matches("[A-Za-z0-9]{6,7}")) {
+            System.out.println("Error: La placa debe ser alfanumérica de 6 o 7 caracteres.");
+            return;
+        }
         this.placa = placa;
     }
 
     public void setModelo(String modelo) {
+        if (modelo == null || modelo.trim().length() < 2 || modelo.trim().length() > 25) {
+            System.out.println("Error: El modelo debe tener entre 2 y 25 caracteres.");
+            return;
+        }
         this.modelo = modelo;
     }
 

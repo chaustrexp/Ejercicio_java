@@ -58,14 +58,26 @@ public class chofer_modelo {
 
     // Setters
     public void setNombre_chofer(String nombre_chofer) {
+        if (nombre_chofer == null || !nombre_chofer.trim().matches("[A-Za-zÁÉÍÓÚáéíóúñÑ\\s]{2,30}")) {
+            System.out.println("Error: El nombre es inválido (debe contener solo letras entre 2 y 30 caracteres).");
+            return;
+        }
         this.nombre_chofer = nombre_chofer;
     }
 
     public void setCedula_chofer(String cedula_chofer) {
+        if (cedula_chofer == null || !cedula_chofer.trim().matches("[0-9]{10}")) {
+            System.out.println("Error: La cédula es inválida (debe contener exactamente 10 dígitos numéricos).");
+            return;
+        }
         this.cedula_chofer = cedula_chofer;
     }
 
     public void setLicencia(String licencia) {
+        if (licencia == null || !licencia.trim().matches("[A-Za-z0-9]{6,12}")) {
+            System.out.println("Error: La licencia es inválida (debe ser alfanumérica de 6 a 12 caracteres).");
+            return;
+        }
         this.licencia = licencia;
     }
 

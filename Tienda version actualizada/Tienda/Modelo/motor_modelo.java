@@ -66,14 +66,29 @@ public class motor_modelo {
     // Setters
 
     public void setCilindraje(int cilindraje) {
+        if (cilindraje < 500 || cilindraje > 20000) {
+            System.out.println("Error: El cilindraje debe ser mayor a 500 y menor a 20000.");
+            return;
+        }
         this.cilindraje = cilindraje;
     }
 
     public void setTipo_motor(String tipo_motor) {
+        if (tipo_motor == null || (!tipo_motor.equalsIgnoreCase("Diesel") &&
+                !tipo_motor.equalsIgnoreCase("Gasolina") &&
+                !tipo_motor.equalsIgnoreCase("Hibrido") &&
+                !tipo_motor.equalsIgnoreCase("Electrico"))) {
+            System.out.println("Error: El tipo de motor es inválido (Diesel, Gasolina, Hibrido, Electrico).");
+            return;
+        }
         this.tipo_motor = tipo_motor;
     }
 
     public void setNumero_serie(String numero_serie) {
+        if (numero_serie == null || numero_serie.trim().length() < 10 || numero_serie.trim().length() > 20) {
+            System.out.println("Error: El número de serie debe tener entre 10 y 20 caracteres.");
+            return;
+        }
         this.numero_serie = numero_serie;
     }
 

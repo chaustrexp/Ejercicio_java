@@ -76,18 +76,34 @@ public class pasajero_modelo {
 
     // Setters
     public void setNombre_pasajero(String nombre_pasajero) {
+        if (nombre_pasajero == null || !nombre_pasajero.trim().matches("[A-Za-zÁÉÍÓÚáéíóúñÑ\\s]{2,20}")) {
+            System.out.println("Error: El nombre debe tener entre 2 y 20 caracteres y solo letras.");
+            return;
+        }
         this.nombre_pasajero = nombre_pasajero;
     }
 
     public void setApellido_pasajero(String apellido_pasajero) {
+        if (apellido_pasajero == null || !apellido_pasajero.trim().matches("[A-Za-zÁÉÍÓÚáéíóúñÑ\\s]{2,20}")) {
+            System.out.println("Error: El apellido debe tener entre 2 y 20 caracteres y solo letras.");
+            return;
+        }
         this.apellido_pasajero = apellido_pasajero;
     }
 
     public void setCedula_pasajero(String cedula_pasajero) {
+        if (cedula_pasajero == null || !cedula_pasajero.trim().matches("[0-9]{10}")) {
+            System.out.println("Error: La cedula es invalida (debe ser numérica de 10 dígitos).");
+            return;
+        }
         this.cedula_pasajero = cedula_pasajero;
     }
 
     public void setTelefono_pasajero(String telefono_pasajero) {
+        if (telefono_pasajero == null || !telefono_pasajero.trim().matches("09[0-9]{8}")) {
+            System.out.println("Error: El telefono es invalido (debe empezar con 09 y tener 10 dígitos).");
+            return;
+        }
         this.telefono_pasajero = telefono_pasajero;
     }
 
