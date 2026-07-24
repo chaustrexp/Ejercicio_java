@@ -1,76 +1,22 @@
-# 🛒 Ejercicio Java - Sistema de Tienda (MVC)
+# 🛒 Ejercicio Java - Sistema de Tienda
 
-Aplicación de escritorio desarrollada en **Java** para la gestión de productos, clientes y procesos de venta en una tienda, implementando el patrón de diseño **Modelo-Vista-Controlador (MVC)** y componentes de interfaz gráfica **Java Swing**.
-
----
-
-## 🚀 Características
-
-* **Patrón de Arquitectura MVC:** Separación clara entre la lógica de negocio, la interfaz gráfica y los controladores.
-* **Gestión de Vistas:** Módulos e interfaces desacopladas para controlar flujos de pasajeros, productos y motores de la aplicación.
-* **Persistencia / Fuentes de datos:** Manejo de datos y lectura a través de archivos planos (`sources.txt`).
+Un proyecto en Java enfocado en la aplicación de programación orientada a objetos (POO), arquitectura en capas y buenas prácticas de desarrollo. El sistema incluye tanto una versión interactiva por consola como una interfaz gráfica de usuario (GUI).
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🚀 Características Principales
 
-* **Lenguaje:** Java (JDK 17+)
-* **GUI Framework:** Java Swing / AWT
-* **IDE Recomendado:** VS Code / NetBeans / Eclipse / IntelliJ IDEA
-* **Control de Versiones:** Git & GitHub
+* **Dos modalidades de ejecución:**
+  * 🖥️ **Versión GUI:** Interfaz gráfica basada en Java Swing para una experiencia visual e intuitiva.
+  * 💻 **Versión Consola:** Ejecución nativa desde la terminal orientada a una interacción rápida.
+* **Manejo de Modelos y Validaciones:** Lógica de negocio estructurada con validaciones defensivas en los datos.
+* **Arquitectura Limpia:** Separación clara de responsabilidades (Modelos, Vistas y Controladores).
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📁 Estructura del Repositorio
 
 ```text
 Ejercicio_java/
-├── Tienda version actualizada/
-│   └── Tienda/
-│       ├── Controlador/   # Lógica de comunicación entre Vista y Modelo
-│       ├── Main/          # Punto de entrada de la aplicación (Clase principal)
-│       ├── Modelo/        # Lógica de negocio y estructuras de datos
-│       ├── Vista/         # Interfaces gráficas de usuario (Swing)
-│       └── sources.txt    # Archivos de datos / recursos
-├── .gitignore             # Archivos excluidos del control de versiones
-└── README.md              # Documentación del proyecto
-
-
-
-
----
-
-## Pasos para guardarlo y subirlo a GitHub
-
-<Sequence>
-{/* Reason: Guardar y publicar el nuevo archivo README.md mediante un commit formal en el repositorio. */}
-  <Step subtitle="Guardado local" title="1. Editar el README.md">
-    Abre tu archivo `README.md` en la raíz en VS Code, reemplaza todo el contenido por el bloque anterior y guarda los cambios (`Ctrl + S`).
-  </Step>
-  <Step subtitle="Indexación" title="2. Agregar cambios a Git">
-    En tu terminal de PowerShell ejecuta:
-    ```powershell
-    git add README.md
-    ```
-  </Step>
-  <Step subtitle="Commit" title="3. Registrar la actualización">
-    ```powershell
-    git commit -m "docs: Añadir documentación principal en README.md"
-    ```
-  </Step>
-  <Step subtitle="Publicación" title="4. Subir a GitHub">
-    ```powershell
-    git push origin main
-    ```
-  </Step>
-</Sequence>
-
----
-
-1. git clone https://github.com/chaustrexp/Ejercicio_java.git
-
-2. cd Ejercicio_java
-
-
-Autor
-Cristian Chaustre - @chaustrexp
+├── Tienda version actualizada/    # Proyecto con Interfaz Gráfica (Java Swing / GUI)
+└── Tienda consola/                 # Proyecto ejecutable desde la Terminal / Consola
