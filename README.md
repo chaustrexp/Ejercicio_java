@@ -1,33 +1,33 @@
-# 🛒 Ejercicio Java - Sistema de Tienda y Consola
+# 🚗 Sistema de Gestión de Parqueadero - Ejercicio Java
 
-![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=openjdk)
-![Status](https://img.shields.io/badge/Estado-Finalizado-success?style=for-the-badge)
-
-Aplicación desarrollada en **Java** orientada a la gestión y simulación de un sistema de tienda. El proyecto implementa una arquitectura limpia enfocada en Programación Orientada a Objetos (POO), validaciones en capas de datos/modelos e interfaz por consola/Swing.
+Aplicación de escritorio desarrollada en **Java** para la gestión de parqueaderos y control de vehículos, implementando el patrón de arquitectura **Modelo-Vista-Controlador (MVC)** e interfaz gráfica interactiva con **Java Swing**.
 
 ---
 
 ## 🚀 Características Principales
 
-* **Gestión de Productos e Inventario:** Lógica central para creación, actualización y control de stock.
-* **Validaciones Defensivas:** Validación de entradas de datos e integridad en los modelos para prevenir errores en tiempo de ejecución.
-* **Estructura Escalable:** Código organizado bajo principios de separación de responsabilidades.
+* **Patrón MVC:** Separación clara entre la lógica del negocio, el modelo de datos y la interfaz de usuario.
+* **Gestión de Vehículos:** Registro, control e información detallada de vehículos y conductores.
+* **Interfaz Gráfica (GUI):** Ventana interactiva y amigable construida con Java Swing para un uso intuitivo.
+* **Modo Consola:** Compatibilidad con la ejecución e interacciones desde la terminal/consola.
+* **Cálculo de Tarifas:** Lógica orientada a objetos para gestionar y procesar tiempos y cobros de estacionamiento.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-* **Lenguaje:** Java (JDK 17+)
-* **Paradigma:** Programación Orientada a Objetos (POO)
-* **Entorno de Desarrollo:** IntelliJ IDEA / Eclipse / VS Code
+* **Lenguaje:** Java (JDK 17 o superior)
+* **Arquitectura:** Modelo-Vista-Controlador (MVC)
+* **IDE Recomendado:** VS Code / NetBeans / Eclipse / IntelliJ IDEA
 * **Control de Versiones:** Git & GitHub
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto (MVC)
 
 ```text
-Ejercicio_java/
-├── Tienda consola/          # Módulo / ejecutable por consola
-├── .gitignore               # Exclusiones para artefactos Java y configuraciones de IDE
-└── README.md                # Documentación del proyecto
+src/
+ ├── controller/       # Controladores (Gestión de eventos y lógica entre Vista y Modelo)
+ ├── model/            # Clases del modelo (Vehículo, Conductor, Tarifa, etc.)
+ ├── view/             # Vistas de la aplicación (Formularios e Interfaces Java Swing)
+ └── Main.java         # Punto de entrada de la aplicación
