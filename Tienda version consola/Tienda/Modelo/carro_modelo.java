@@ -29,7 +29,8 @@ public class carro_modelo {
         return true;
     }
 
-    // Métodos de validación privados (encapsulados, ocultos desde fuera de la clase)
+    // Métodos de validación privados (encapsulados, ocultos desde fuera de la
+    // clase)
 
     private boolean validar_marca(String dato_marca) {
         return dato_marca != null && dato_marca.trim().length() >= 2 && dato_marca.trim().length() <= 30;
@@ -48,8 +49,6 @@ public class carro_modelo {
     public String getMarca() {
         return marca;
     }
-
-
 
     public String getPlaca() {
         return placa;
@@ -84,7 +83,7 @@ public class carro_modelo {
 
     @Override
     public String toString() {
-        return "marca: " +  marca  + "Placa: " + placa + "Modelo: "
+        return "marca: " + marca + "Placa: " + placa + "Modelo: "
                 + modelo;
     }
 
