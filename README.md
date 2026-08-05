@@ -14,13 +14,8 @@
 - [Visión General](#-visión-general)
 - [Características Destacadas](#-características-destacadas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Arquitectura de Software](#-arquitectura-de-software)
-- [Requisitos de Instalación](#-requisitos-de-instalación)
-- [Guía de Ejecución](#-guía-de-ejecución)
-- [Contribuciones](#-contribuciones)
-- [Autor](#-autor)
-- [Licencia](#-licencia)
+
+
 
 ---
 
