@@ -36,7 +36,6 @@ El proyecto se dividió estratégicamente en dos versiones de aprendizaje e impl
 ## ✨ Características Destacadas
 
 - 📦 **Gestión de Productos:** Registro, actualización, eliminación y consulta de stock de inventario.
-- 💵 **Control de Ventas y Compras:** Registro de operaciones comerciales con cálculo automático de totales.
 - 🔄 **Dos Modalidades de Uso:**
   - **Modo Consola:** Rápido, ligero y centrado en la lógica.
   - **Modo GUI (Swing):** Formularios interactivos, tablas dinámicas y ventanas de diálogo.
